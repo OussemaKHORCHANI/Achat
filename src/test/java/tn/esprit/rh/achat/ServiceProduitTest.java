@@ -19,7 +19,7 @@ public class ServiceProduitTest {
 
     @Autowired
     ProduitRepository produitRepository;
-
+    @Disabled
     @Test
     @Order(0)
     public void testAddProduit() {
