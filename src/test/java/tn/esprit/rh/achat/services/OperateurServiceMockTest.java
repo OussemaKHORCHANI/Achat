@@ -52,7 +52,7 @@ public class OperateurServiceMockTest {
         //test
         List<Operateur> sList = operateurService.retrieveAllOperateurs();
         assertEquals(3, sList.size());
-        System.out.println(" Retrieve all is working correctly...!!");
+        log.info(" Retrieve all is working correctly...!!");
 
     }
 }
