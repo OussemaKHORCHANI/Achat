@@ -32,15 +32,15 @@ public class SpringFoxSwaggerConfig {
 				.securityContexts(Collections.singletonList(securityContext()))
 				.securitySchemes(Arrays.asList(apiKey()))
 				.select()
-				.apis(RequestHandlerSelectors.basePackage("com.esprit.examen.controller"))
+				.apis(RequestHandlerSelectors.basePackage("tn.esprit.rh.achat.controllers"))
 				.paths(PathSelectors.any())
 				.build();
 	}
 	
     private ApiInfo apiEndPointsInfo() {
         return new ApiInfoBuilder()
-                .title("My STOCK PROJECT")
-                .description("Micro-Service Documentation")
+                .title("Achat")
+                .description("Devops Project Documentation")
                 .version("1.0.0")
                 .build();
     }
