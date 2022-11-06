@@ -26,10 +26,10 @@ services:
       - mysqldb
 
   angular_app:
-    image: wassim19/achatfront:1.0
+    image: anas1412/achatfront:1.0
     container_name: achatFrontEnd
     restart: on-failure
     ports:
-      - 4200:4200
+      - 4200:80
     depends_on:
       - spring_app
